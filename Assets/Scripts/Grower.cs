@@ -5,7 +5,7 @@ public class Grower : MonoBehaviour
 {
     [SerializeField] private float _speed;
     
-    void Update()
+    private void Update()
     {
         float currentScaleValue = transform.localScale.x;
         float nextScaleValue = currentScaleValue + _speed * Time.deltaTime;
